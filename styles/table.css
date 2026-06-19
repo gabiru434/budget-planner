@@ -1,0 +1,65 @@
+.month-title{
+    margin: 0em 1em;
+    font-size: 4rem;
+    font-family: var(--font-title);
+    color: var(--cherry);
+}
+
+.all-tables{
+    display: flex;
+    margin: 0em 2em;
+    gap: 2em;
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--dark-cherry);
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    border: 0.1em solid var(--light-pink);
+    border-radius: 0.5em;
+    padding: 1em 5em;
+}
+
+.table-title{
+    background-color: var(--dark-cherry);
+    color: var(--light-pink);
+    font-family: var(--font-title);
+    font-size: 2rem;
+}
+
+.table-subtitle{
+    background-color: var(--dark-cherry);
+    color: var(--light-pink);
+    font-weight: 500;
+}
+
+.table-value{
+    color: var(--dark-cherry);
+    display: flex;
+    justify-content: center;
+}
+
+.table-notes{
+    border: 0.1em solid var(--light-pink);
+    border-radius: 0.5em;
+    background-color: var(--light-pink);
+    padding: 0.5em;
+}
+
+.title-notes{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    margin: 0.3em ;
+}
+
+.text-notes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0em 2em;
+    padding: 2em;
+    border: 0.05em dashed var(--cherry);
+    border-radius: 0.5em;
+    background-color: var(--white);
+}

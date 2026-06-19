@@ -1,0 +1,16 @@
+.header-nav{
+    display: flex;
+}
+
+.header-title{
+    background-color: var(--light-pink);
+    color: var(--cherry);
+    font-family: var(--font-title);
+}
+
+.header-text{
+    background-color: var(--dark-cherry);
+    color: var(--white);
+    font-family: var(--font-body);
+    list-style-type: none;
+}
