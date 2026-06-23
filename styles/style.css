@@ -2,11 +2,14 @@
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./table.css);
+@import url(./notes.css);
+
 
 :root{
     --cherry:#A8112A;
     --dark-cherry:#931934;
     --light-pink:#feecef;
+    --pink:#ffd8de;
     --background:#fdf9fa;
     --white:#FFFFFF;
     --border:#E5D7DB;
