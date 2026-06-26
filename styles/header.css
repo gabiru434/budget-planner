@@ -1,21 +1,34 @@
 .header-nav{
     display: flex;
     text-align: center;
+    background-color: var(--dark-cherry);
 }
 
 .header-title{
     background-color: var(--light-pink);
     color: var(--cherry);
     font-family: var(--font-title);
-    font-size: 3rem;
-    padding: 0 1em;
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding: 0 1.2em;
     border: 0.5px solid var(--pink);
 }
 
+.header-list{
+    display: flex;  
+    align-items: center;    
+    list-style: none;    
+    padding: 1.5em;          
+    margin: 0;
+    gap: 2em;
+}
+
 .header-text{
-    background-color: var(--dark-cherry);
     color: var(--white);
     font-family: var(--font-body);
-    list-style-type: none;
     margin: 0;
+}
+
+.header-text:hover{
+    color: var(--pink);
 }

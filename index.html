@@ -10,7 +10,7 @@
     <header>
         <nav class="header-nav">
             <h1 class="header-title">Budget Planner</h1>
-            <ul>
+            <ul class="header-list">
                 <li class="header-text">Dashboard</li>
                 <li class="header-text">Transactions</li>
                 <li class="header-text">Categories</li>
@@ -26,86 +26,104 @@
     <section class="all-tables">
         <!-- Income -->
         <table class="table">
-        <tr>
-            <th class="table-header">
-                <img class="table-img" src="./assets/icons/icon-income.png" alt="Income and earnings icon">
-                <h3 class="table-title">Income</h3>
-            </th>
-        </tr>
-        <tr>
-            <td class="table-value">$520</td>
-        </tr>
-        <tr>
-            <th class="table-subtitle">Category</th>
-            <th class="table-subtitle">Amount</th>
-        </tr>
-        <tr>
-            <td>Work</td>
-            <td>R$320</td>
-        </tr>
-        <tr>
-            <td>Freelance</td>
-            <td>R$200</td>
-        </tr>
+            <tr class="table-header-row">
+                <th class="table-header" colspan="">
+                    <img class="table-img" src="./assets/icons/icon-income.png" alt="Income and earnings icon">
+                    <h3 class="table-title">Income</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="table-value" colspan="2">$520</td>
+            </tr>
+            <tr>
+                <th class="table-subtitle" colspan="2">Category</th>
+                <th class="table-subtitle" colspan="2">Amount</th>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td></td>
+                <td></td>
+                <td>R$320</td>
+            </tr>
+            <tr>
+                <td>Freelance</td>
+                <td></td>
+                <td></td>
+                <td>R$200</td>
+            </tr>
         </table>
 
         <!-- Total Expenses -->
         <table class="table">
-        <tr>
+        <tr class="table-header-row">
             <th class="table-header">
                 <img class="table-img" src="./assets/icons/icon-total-expenses.png" alt="Expenses and payments icon">
-                <h3 class="table-title">Total Expenses</h3>
+                <h3 class="table-title">Total  Expenses</h3>
             </th>
         </tr>
         <tr>
-            <td class="table-value">$130</td>
+            <td class="table-value" colspan="4">$130</td>
         </tr>
         <tr>
-            <th class="table-subtitle">Category</th>
-            <th class="table-subtitle">Amount</th>
+            <th class="table-subtitle" colspan="2">Category</th>
+            <th class="table-subtitle" colspan="4">Amount</th>
         </tr>
         <tr>
             <td>Food</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>R$100</td>
         </tr>
         <tr>
             <td>Uber</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>R$0</td>
         </tr>
         <tr>
             <td>Shopping</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>R$30</td>
         </tr>
         </table>
 
         <!-- Left to Spend -->
         <table class="table">
-            <tr>
+            <tr class="table-header-row">
                 <th class="table-header">
                     <img class="table-img" src="./assets/icons/icon-left-to-spend.png" alt="Variable expenses and purchases icon">
-                    <h3 class="table-title">Left to Spend</h3>
+                    <h3 class="table-title">Left  to  Spend</h3>
                 </th>
             </tr>
             <tr>
                 <td class="table-value">$520</td>
             </tr>
             <tr>
-                <th class="table-subtitle">Category</th>
-                <th class="table-subtitle">Amount</th>
+                <th class="table-subtitle" colspan="2">Category</th>
+                <th class="table-subtitle" colspan="2">Amount</th>
             </tr>
             <tr>
                 <td>Savings</td>
+                <td></td>
                 <td>R$20</td>
             </tr>
             <tr>
                 <td>Tithe</td>
+                <td></td>
                 <td>R$165</td>
             </tr>
         </table>
 
         <!-- Notes -->
         <table class="table-notes">
-            <tr>
+            <tr class="table-header-row">
                 <th class="title-header"> 
                     <img class="table-img" src="./assets/icons/icon-notes.png" alt="Financial notes and reminder icon">
                     <h3 class="title-notes">Notes</h3>
@@ -113,6 +131,83 @@
             </tr>
             <tr>
                 <td class="text-notes">A personal notes area. Store contextual information that numbers alone do not explain.</td>
+            </tr>
+        </table>
+
+         <!-- Cash Flow -->
+        <table class="table">
+            <tr class="table-header-row">
+                <th class="table-header">
+                    <img class="table-img" src="./assets/icons/icon-cah-flow.png" alt="Variable expenses and purchases icon">
+                    <h3 class="table-title">Cash Flow</h3>
+                </th>
+            </tr>
+            <tr>
+                <th class="table-subtitle" colspan="2">Category</th>
+                <th class="table-subtitle" colspan="2">Amount</th>
+            </tr>
+            <tr>
+                <td>Income</td>
+                <td></td>
+                <td>R$520</td>
+            </tr>
+            <tr>
+                <td>Saving and Inv.</td>
+                <td></td>
+                <td>R$165</td>
+            </tr>
+            <tr>
+                <td>Fixed</td>
+                <td></td>
+                <td>R$165</td>
+            </tr>
+            <tr>
+                <th class="table-subtitle" colspan="2">Difference</th>
+                <th class="table-subtitle" colspan="2">R$20</th>
+            </tr>
+        </table>
+
+         <!-- Variable  Expenses -->
+        <table class="table">
+            <tr class="table-header-row">
+                <th class="table-header">
+                    <img class="table-img" src="./assets/icons/icon-variable-expenses.png" alt="Variable expenses and purchases icon">
+                    <h3 class="table-title">Variable  Expenses</h3>
+                </th>
+            </tr>
+            <tr>
+                <th class="table-subtitle" colspan="3">Category</th>
+                <th class="table-subtitle" colspan="2">Date</th>
+                <th class="table-subtitle" colspan="2">Amount</th>
+            </tr>
+            <tr>
+                <td>Uber</td>
+                <td></td>
+                <td></td>
+                <td>03/07</td>
+                <td></td>
+                <td>R$20</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td></td>
+                <td></td>
+                <td>15/07</td>
+                <td></td>
+                <td>R$165</td>
+            </tr>
+            <tr>
+                <td>Clothes</td>
+                <td></td>
+                <td></td>
+                <td>22/07</td>
+                <td></td>
+                <td>R$165</td>
+            </tr>
+            <tr>
+                <th class="table-subtitle" colspan="3">Total Variable</th>
+                <td></td>
+                <th class="table-subtitle" colspan="2">R$20</th>
             </tr>
         </table>
     </section>

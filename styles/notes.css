@@ -3,12 +3,14 @@
     border-radius: 0.5em;
     background-color: var(--light-pink);
     padding: 0.5em;
+    width: 20em;
 }
 
 .title-notes{
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0.3em ;
+    font-weight: 100;
 }
 
 .text-notes{

@@ -1,12 +1,15 @@
 .month-title{
-    margin: 0em 0.8em;
+    margin: 0em 2em;
     font-size: 5rem;
+    font-weight: 200;
     font-family: var(--font-title);
     color: var(--cherry);
 }
 
 .all-tables{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0.5em 2em;
     gap: 2em;
     font-family: var(--font-body);
@@ -17,8 +20,14 @@
 .table{
     display: flex;
     justify-content: center;
-    border: 0.1em solid var(--light-pink);
+    background-color: var(--white);
     border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.table-header-row{
+    display: flex;
+    align-items: center;
 }
 
 .table-header{
@@ -26,14 +35,18 @@
     align-items: center;
     gap: 0.5em;
     background-color: var(--dark-cherry);
-    padding: 1em 5em;
+    padding: 1em 3em;
+    border-radius: 0.5em;
 }
 
 .table-title{
     color: var(--light-pink);
     font-family: var(--font-title);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 100;
     line-height: 1;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
 }
 
 .table-img{
@@ -42,22 +55,19 @@
 }
 
 .table-subtitle{
-    background-color: var(--dark-cherry);
     color: var(--light-pink);
     font-weight: 500;
     font-size: 1em;
+    background-color: var(--dark-cherry);
+    border-radius: 0.5em;
 }
 
 .table-value{
     color: var(--dark-cherry);
-    display: flex;
-    justify-content: center;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 th, td {
   padding: 1em;
-}
-
-tr:hover {
-    background-color: var(--light-pink);
 }
