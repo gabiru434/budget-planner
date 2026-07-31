@@ -18,6 +18,23 @@
                 <li class="header-text">Goals</li>
                 <li class="header-text">Settings</li>
             </ul>
+            <div class="menu-container">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <nav class="menu">
+                    <ul>
+                    <li><a href="#">July</a></li>
+                    <li><a href="#">August</a></li>
+                    <li><a href="#">Setember</a></li>
+                    <li><a href="#">October</a></li>
+                    </ul>
+                </nav>
+            </div>
         </nav>
     </header>
     <main>
@@ -33,7 +50,7 @@
                 </th>
             </tr>
             <tr>
-                <td class="table-value" colspan="2">$520</td>
+                <th class="total-table-value" colspan="6" id="result-income"></th>
             </tr>
             <tr>
                 <th class="table-subtitle" colspan="2">Category</th>
@@ -43,13 +60,13 @@
                 <td>Work</td>
                 <td></td>
                 <td></td>
-                <td>R$320</td>
+                <td class="table-value" id="value1-income">0</td>
             </tr>
             <tr>
                 <td>Freelance</td>
                 <td></td>
                 <td></td>
-                <td>R$200</td>
+                <td class="table-value" id="value2-income">350</td>
             </tr>
         </table>
 
@@ -62,35 +79,27 @@
             </th>
         </tr>
         <tr>
-            <td class="table-value" colspan="4">$130</td>
+            <th colspan="6" class="total-table-value" id="result-expenses">0</th>
         </tr>
         <tr>
-            <th class="table-subtitle" colspan="2">Category</th>
-            <th class="table-subtitle" colspan="4">Amount</th>
+            <th class="table-subtitle" colspan="3">Category</th>
+            <th class="table-subtitle" colspan="3">Amount</th>
         </tr>
         <tr>
-            <td>Food</td>
+            <td>Credit card</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>R$100</td>
+            <td class="table-value" id="value1-expenses">300</td>
         </tr>
         <tr>
-            <td>Uber</td>
+            <td>Variable</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>R$0</td>
-        </tr>
-        <tr>
-            <td>Shopping</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>R$30</td>
+            <td class="table-value" id="value2-expenses">0</td>
         </tr>
         </table>
 
@@ -103,27 +112,31 @@
                 </th>
             </tr>
             <tr>
-                <td class="table-value">$520</td>
+                <th colspan="6" class="total-table-value" id="result-left">0</th>
             </tr>
             <tr>
-                <th class="table-subtitle" colspan="2">Category</th>
-                <th class="table-subtitle" colspan="2">Amount</th>
+                <th class="table-subtitle" colspan="3">Category</th>
+                <th class="table-subtitle" colspan="3">Amount</th>
             </tr>
             <tr>
-                <td>Savings</td>
+                <td>Investments</td>
                 <td></td>
-                <td>R$20</td>
+                <td></td>
+                <td></td>
+                <td colspan="4" class="table-value" id="value1-left">10</td>
             </tr>
             <tr>
                 <td>Tithe</td>
                 <td></td>
-                <td>R$165</td>
+                <td></td>
+                <td></td>
+                <td colspan="4" class="table-value" id="value2-left">165</td>
             </tr>
         </table>
 
         <!-- Notes -->
         <table class="table-notes">
-            <tr class="table-header-row">
+            <tr>
                 <th class="header-notes"> 
                     <img class="table-img-notes" src="./assets/icons/icon-notes.png" alt="Financial notes and reminder icon">
                     <h3 class="title-notes">Notes</h3>
@@ -149,21 +162,21 @@
             <tr>
                 <td>Income</td>
                 <td></td>
-                <td>R$520</td>
+                <td id="value1-cashflow">0</td>
             </tr>
             <tr>
-                <td>Saving and Inv.</td>
+                <td>Investments</td>
                 <td></td>
-                <td>R$165</td>
+                <td id="value2-cashflow">0</td>
             </tr>
             <tr>
-                <td>Fixed</td>
+                <td>Expenses</td>
                 <td></td>
-                <td>R$165</td>
+                <td id="value3-cashflow">0</td>
             </tr>
             <tr>
                 <th class="table-subtitle" colspan="2">Difference</th>
-                <th class="table-subtitle" colspan="2">R$20</th>
+                <th class="table-subtitle" colspan="2" id="result-difference">0</th>
             </tr>
         </table>
 
@@ -176,42 +189,47 @@
                 </th>
             </tr>
             <tr>
-                <th class="table-subtitle" colspan="3">Category</th>
-                <th class="table-subtitle" colspan="2">Date</th>
-                <th class="table-subtitle" colspan="2">Amount</th>
+                <th class="table-subtitle" colspan="5">Category</th>
+                <th class="table-subtitle" colspan="3">Amount</th>
             </tr>
             <tr>
                 <td>Uber</td>
                 <td></td>
                 <td></td>
-                <td>03/07</td>
                 <td></td>
-                <td>R$20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="value1-variable" >7</td>
             </tr>
             <tr>
                 <td>Food</td>
                 <td></td>
                 <td></td>
-                <td>15/07</td>
                 <td></td>
-                <td>R$165</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="value2-variable">0</td>
             </tr>
             <tr>
-                <td>Clothes</td>
+                <td>Shopping</td>
                 <td></td>
                 <td></td>
-                <td>22/07</td>
                 <td></td>
-                <td>R$165</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="value3-variable">27</td>
             </tr>
             <tr>
-                <th class="table-subtitle" colspan="3">Total Variable</th>
-                <td></td>
-                <th class="table-subtitle" colspan="2">R$20</th>
+                <th class="table-subtitle" colspan="5">Total Variable</th>
+                <th class="table-subtitle" colspan="4" id="result-variable"></th>
             </tr>
         </table>
     </section>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -28,15 +28,16 @@
 .table-header-row{
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: var(--dark-cherry);
+    border-radius: 0.5em;
 }
 
 .table-header{
     display: flex;
     align-items: center;
     gap: 0.5em;
-    background-color: var(--dark-cherry);
     padding: 1em 3em;
-    border-radius: 0.5em;
 }
 
 .table-title{
@@ -62,7 +63,7 @@
     border-radius: 0.5em;
 }
 
-.table-value{
+.total-table-value{
     color: var(--dark-cherry);
     font-weight: 500;
     font-size: 1.5rem;
